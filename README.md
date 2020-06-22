@@ -8,9 +8,9 @@ Data: 10.06.2020 r.
 
 # Informacje o studencie
 
-Imię i nazwisko studenta: Imię Nazwisko  
-Numer albumu: 12345  
-Grupa studencka: WELE18XQ*S1
+Imię i nazwisko studenta: Wojciech Szymański  
+Numer albumu: 72030  
+Grupa studencka: WELE18XQ2S1
 
 # Odpowiedzi do pytań z instrukcji
 ...
