@@ -14,3 +14,4 @@ Grupa studencka: WEL18EQ2S1
 
 # Odpowiedzi do pytań z instrukcji
 ...
+ 
