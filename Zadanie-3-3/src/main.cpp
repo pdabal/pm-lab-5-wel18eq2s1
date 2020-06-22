@@ -11,8 +11,10 @@ void setup() {
     lcd.begin(16, 2);
     lcd.print("Daniel Slomka");
     tabLen = sizeof(tablica);
-    delay(2000);
+    delay(2000);//opoznienie
     }
+
+
 
 void loop() {
     for(int i = 0; i <(18 - tabLen); i++) {
