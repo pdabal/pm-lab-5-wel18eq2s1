@@ -1,39 +1,33 @@
 #include <Arduino.h>
 #include <LiquidCrystal.h>
+#include <stdio.h>
 
-LiquidCrystal lcd(12, 11 , 5, 4, 3, 2);
-char tablica[] = "Rafal";
-int tabLen = 0;
-
-void lcdClear(void);
-
-void setup() {
-    lcd.begin(16, 2);
-    lcd.print("Rafal Bielinski");
-    tabLen = sizeof(tablica);
-    delay(2000);
-    }
-
-void loop() {
-    for(int i = 0; i <(18 - tabLen); i++) {
-        lcdClear();
-        lcd.setCursor(i, 0);
-        lcd.print(tablica);
-        delay(1000);
-    }
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+char rxBuff[32];
+int ValueA = 0, ValueB = 0;
+char operation[16];
+int x, y,s = 0;
 
 
-    for(int i = (17 - tabLen); i >=0; i--) {
-        lcdClear();
-        lcd.setCursor(i, 1);
-        lcd.print(tablica);
-        delay(1000);
-    }
+int kalk(x, y) {
+	scanf(x,"+",y);
+  	s = x + y;
+	return s;
 }
 
-void lcdClear(void) {
+void setup() {
+    lcd.begin(16,2);
+    lcd.print("Imie Nazwisko");
+    Serial.begin(9600);
+    Serial.setTimeout(3000);
+    delay(2000);
+}
+
+void loop() {
+    Serial.readBytesUntil('\r', rxBuff, sizeof(rxBuff) - 1);
     lcd.setCursor(0,0);
-    lcd.print("                ");
-    lcd.setCursor(0,1);
-    lcd.print("                ");
+    lcd.print(rxBuff);
+    lcd.setCursor(0, 1);
+    lcd.print("=");
+  	lcd.print(s);
 }
