@@ -13,4 +13,4 @@ Numer albumu: 72011
 Grupa studencka: WELE18EQ2S1
 
 # Odpowiedzi do pytań z instrukcji
-...
+Zakończenie zajęć numer 5 – Przemyslaw Policht
