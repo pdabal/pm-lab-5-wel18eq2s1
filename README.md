@@ -13,4 +13,8 @@ Numer albumu: 71984
 Grupa studencka: WEL18EQ2S1
 
 # Odpowiedzi do pytań z instrukcji
+
+Zakończenie zajęć
+
+
 ...
