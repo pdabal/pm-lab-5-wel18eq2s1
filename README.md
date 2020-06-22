@@ -14,3 +14,4 @@ Grupa studencka: WELE18Q2S1
 
 # Odpowiedzi do pytań z instrukcji
 ...
+Zakończenie zajęć numer 5
