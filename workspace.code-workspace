@@ -1,16 +1,15 @@
-{
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"name": "Zadanie-3-2",
-			"path": "Zadanie-3-2"
-		},
-		{
-			"name": "Zadanie-3-3",
-			"path": "Zadanie-3-3"
-		}
-	],
-	"settings": {}
+#include <Arduino.h>
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11 , 5, 4, 3, 2);
+
+void setup() {
+    lcd.begin(16, 2);
+    lcd.print("Szeliga");
+    }
+
+void loop() {
+    lcd.setCursor(0, 1);
+    lcd.print(millis() / 1000);
+    delay(500);
 }
